@@ -26,4 +26,24 @@ img.forEach(element => {
         event.target.style.transform = 'scale(1)';
         event.target.style.transition = 'transform 0.3s'
     })
+});
+
+// keydown event
+const body = document.querySelector('body');
+body.addEventListener('keydown', () => {
+    body.style.backgroundColor = '#FFEBCD';
+});
+
+
+// window resize event
+const button = document.querySelector('.btn');
+window.addEventListener('resize', () => {
+    button.style.color = 'red';
+    //console.log('boo')
+});
+
+//double click event
+const logoHeader = document.querySelector('.logo-heading');
+logoHeader.addEventListener('dblclick', () => {
+    logoHeader.style.color = 'blue';
 })
