@@ -56,3 +56,17 @@ para.forEach(element => {
         //console.log('mouse over works');
     })
 });
+
+// scroll event 
+// body.addEventListener('scroll', () => {
+//     //body.style.backgroundColor = 'slategray';
+//     console.log('kkkkkd')
+// })
+
+
+//wheel event
+const introHeader = document.querySelector('.intro h2');
+introHeader.addEventListener('wheel', () => {
+    event.target.style.transform = 'scale(1.4)';
+    event.target.style.transition = 'transform 0.3s'
+})
