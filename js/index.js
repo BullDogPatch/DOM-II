@@ -47,3 +47,12 @@ const logoHeader = document.querySelector('.logo-heading');
 logoHeader.addEventListener('dblclick', () => {
     logoHeader.style.color = 'blue';
 })
+
+// mouseover event
+const para = document.querySelectorAll('p');
+para.forEach(element => {
+    element.addEventListener('mouseover', (event) => {
+        event.target.style.color = 'hotpink';
+        //console.log('mouse over works');
+    })
+});
